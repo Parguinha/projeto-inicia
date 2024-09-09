@@ -1,146 +1,71 @@
 <!DOCTYPE html>
-<html lang  ="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Estilo para o cabeçalho */
-header {
-    background-color: #007bff; /* Azul Bootstrap */
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin: 0;
-}
-
-nav .navbar-nav .nav-link {
-    color: white;
-    margin: 0 10px;
-    transition: color 0.3s;
-}
-
-nav .navbar-nav .nav-link:hover {
-    color: #dcdcdc; /* Cor ao passar o mouse */
-}
-
-/* Estilo para o corpo da página */
-main {
-    margin-top: 20px;
-}
-
-section {
-    padding: 20px;
-    background-color: #f8f9fa; /* Cor de fundo clara */
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
-}
-
-/* Estilo para o rodapé */
-footer {
-    background-color: #343a40; /* Cor do rodapé */
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-}
-/* Estilo para o cabeçalho */
-header {
-    background-color: #007bff; /* Azul Bootstrap */
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin: 0;
-}
-
-nav .navbar-nav .nav-link {
-    color: white;
-    margin: 0 10px;
-    transition: color 0.3s;
-}
-
-nav .navbar-nav .nav-link:hover {
-    color: #dcdcdc; /* Cor ao passar o mouse */
-}
-
-/* Estilo para o corpo da página */
-main {
-    margin-top: 20px;
-}
-
-section {
-    padding: 20px;
-    background-color: #f8f9fa; /* Cor de fundo clara */
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
-}
-
-/* Estilo para o rodapé */
-footer {
-    background-color: #343a40; /* Cor do rodapé */
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-}
-
-    </style>
+    <title>Site Dinâmico e Responsivo</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <!-- Cabeçalho -->
-    <header class="bg-primary text-white text-center p-4">
-        <h1>Bem-vindo ao Meu Site</h1>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
-                    </li>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Meu Site</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#contact">Contato</a></li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
 
-    <!-- Corpo da página -->
-    <main class="container mt-4">
-        <!-- Seção 1 -->
-        <section class="mb-5 p-3 border rounded bg-light">
-            <h2>Seção 1</h2>
-            <p>Esta é a primeira seção do corpo da página.</p>
+    <!-- Conteúdo Principal -->
+    <main>
+        <section id="home" class="section">
+            <div class="container">
+                <h2>Bem-vindo ao Nosso Site!</h2>
+                <p>Este é um exemplo de um site dinâmico e responsivo usando HTML, CSS e JavaScript.</p>
+                <button id="changeTextButton">Clique para mudar o texto</button>
+                <p id="dynamicText">Texto dinâmico aqui!</p>
+            </div>
         </section>
 
-        <!-- Seção 2 -->
-        <section class="mb-5 p-3 border rounded bg-light">
-            <h2>Seção 2</h2>
-            <p>Esta é a segunda seção do corpo da página.</p>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>Sobre Nós</h2>
+                <p>Somos uma equipe dedicada a criar experiências web incríveis.</p>
+            </div>
         </section>
 
-        <!-- Seção 3 -->
-        <section class="mb-5 p-3 border rounded bg-light">
-            <h2>Seção 3</h2>
-            <p>Esta é a terceira seção do corpo da página.</p>
+        <section id="services" class="section">
+            <div class="container">
+                <h2>Nossos Serviços</h2>
+                <ul>
+                    <li>Desenvolvimento Web</li>
+                    <li>Design Responsivo</li>
+                    <li>Marketing Digital</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contato</h2>
+                <p>Entre em contato conosco através do email: exemplo@meusite.com</p>
+            </div>
         </section>
     </main>
 
     <!-- Rodapé -->
-    <footer class="bg-dark text-white text-center p-3">
-        &copy; 2024 Meu Site. Todos os direitos reservados.
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Parguinha. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
-    <!-- Scripts do Bootstrap -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
